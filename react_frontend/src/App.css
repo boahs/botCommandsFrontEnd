@@ -19,7 +19,7 @@ font-size: 2vh;
 }
 
 .LIST{
-  font-size: 2vh;
+  font-size: 3vh;
 }
 
 .App-header {
@@ -34,6 +34,7 @@ font-size: 2vh;
 }
 
 .App-link {
+  font-size: 1.5vh;
   color: #61dafb;
 }
 

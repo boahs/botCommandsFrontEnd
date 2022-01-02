@@ -51,7 +51,7 @@ function App() {
         <li>!deals</li>
 
           </details>
-        
+          </section>
         <a
           className="App-link"
           href="https://twitch.tv/boahs"
@@ -60,7 +60,6 @@ function App() {
         >
           Follow Boahs
         </a>
-        </section>
       </header>
     </div>
   );
