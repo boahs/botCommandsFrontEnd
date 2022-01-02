@@ -1,15 +1,25 @@
 import './App.css';
 import logo from './images/logo193.png'
+import twitchIcon from './images/twitch-icon.svg'
+import githubIcon from './images/github-icon.svg'
 
 
 function App() {
   return (
     <div className="App">
+      
       <header className="App-header">
+      <code>
+      <img src={githubIcon} alt="twitch icon" className = "icon" />
+            <a 
+              classname="App-link"
+              href="https://github.com/boahs/Boahs_GamingGalleon_Bot"
+              target="_blank"
+              rel="noopener noreferrer"
+              >BoahsBot</a>
+            </code>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <code>BoahsBot</code> master command list
-        </p>
+
         <section className = "SMALLSECONDHEADER">
           Click triangle for dropdown of all commands
         </section>
@@ -52,13 +62,14 @@ function App() {
 
           </details>
           </section>
+       
         <a
           className="App-link"
           href="https://twitch.tv/boahs"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Follow Boahs
+         <img src={twitchIcon} alt="twitch icon" className = "icon" />  Follow Boahs
         </a>
       </header>
     </div>
