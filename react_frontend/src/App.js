@@ -21,7 +21,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
 
         <section className = "SMALLSECONDHEADER">
-          Click triangle for dropdown of all commands
+          Click triangle dropdown for list of all commands
         </section>
         <section className = "LIST">
           <details>
