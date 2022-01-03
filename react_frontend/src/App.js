@@ -2,9 +2,13 @@ import './App.css';
 import logo from './images/logo193.png'
 import twitchIcon from './images/twitch-icon.svg'
 import githubIcon from './images/github-icon.svg'
+import {useEffect} from 'react'
 
 
 function App() {
+  useEffect(() => {
+    document.title = "BoahsBot"
+  }, [])
   return (
     <div className="App">
       <header className="App-header">
