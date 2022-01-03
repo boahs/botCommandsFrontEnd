@@ -7,8 +7,8 @@ import githubIcon from './images/github-icon.svg'
 function App() {
   return (
     <div className="App">
-      
       <header className="App-header">
+        <h2>Bot created for Twitch</h2>
       <code>
       <img src={githubIcon} alt="twitch icon" className = "icon" />
             <a 
