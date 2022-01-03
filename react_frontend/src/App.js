@@ -12,7 +12,7 @@ function App() {
       <code>
       <img src={githubIcon} alt="twitch icon" className = "icon" />
             <a 
-              classname="App-link"
+              className="App-link"
               href="https://github.com/boahs/Boahs_GamingGalleon_Bot"
               target="_blank"
               rel="noopener noreferrer"
