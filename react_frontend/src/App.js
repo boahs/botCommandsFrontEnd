@@ -34,6 +34,22 @@ function App() {
         </summary>
         <li>!commands</li>
         <li>!pan</li>
+        <li>!voyage</li>
+        <li>!dirtydozen</li>
+        <li>!ggtv</li>
+        <li>!deals</li>
+        <li>!game1</li>
+        <li>!game1</li>
+        <li>!game1</li>
+        <li>!game1</li>
+        <li>!game1</li>
+        <li>!game1</li>
+        <li>!game1</li>
+        <li>!game1</li>
+        <li>!game1</li>
+        <li>!game1</li>
+        <li>!game1</li>
+        <li>!game1</li>
         <li>!jungle</li>
         <li>!shining</li>
         <li>!xmen</li>
@@ -46,24 +62,6 @@ function App() {
         <li>!sonic</li>
         <li>!light</li>
         <li>!mercs</li>
-        <li>!game1</li>
-        <li>!game1</li>
-        <li>!game1</li>
-        <li>!game1</li>
-        <li>!game1</li>
-        <li>!game1</li>
-        <li>!game1</li>
-        <li>!game1</li>
-        <li>!game1</li>
-        <li>!game1</li>
-        <li>!game1</li>
-        <li>!game1</li>
-        <li>!voyage</li>
-        <li>!dirtydozen</li>
-        <li>!ggtv</li>
-        <li>!2021Dozen</li>
-        <li>!deals</li>
-
           </details>
           </section>
        
