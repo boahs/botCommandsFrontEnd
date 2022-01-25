@@ -71,7 +71,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-         <img src={twitchIcon} alt="twitch icon" className = "icon" /> Boahs
+         <img src={twitchIcon} alt="twitch icon" className = "icon" />Boahs
         </a>
         
       </header>
