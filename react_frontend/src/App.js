@@ -1,5 +1,5 @@
 import './App.css';
-import logo from './images/logo193.png'
+import logo from './images/dozenmaster.png'
 import twitchIcon from './images/twitch-icon.svg'
 import githubIcon from './images/github-icon.svg'
 import {useEffect} from 'react'
