@@ -3,31 +3,10 @@ import logo from './images/logo193.png'
 import twitchIcon from './images/twitch-icon.svg'
 import githubIcon from './images/github-icon.svg'
 import {useEffect} from 'react'
-import {gsap, TweenMax} from "gsap";
+
 
 
 function App() {
-
-
-  TweenMax.to("h2", 1, {"--myColor":"orange", yoyo:true, repeat:20});
-
-
-//   useEffect(() => {
-//   gsap.to(".test", {
-//     duration: 1,
-//     scale: 1.5,
-//     y: 40,
-//     ease: "power1.inOut",
-//     stagger: {
-//       grid: [7,15],
-//       from: "center",
-//       amount: 1.5
-//     }
-//   });
-// });
-
-
-
   useEffect(() => {
     document.title = "BoahsBot"
   }, [])
