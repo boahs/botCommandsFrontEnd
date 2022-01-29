@@ -38,18 +38,18 @@ function App() {
         <li>!dirtydozen</li>
         <li>!ggtv</li>
         <li>!deals</li>
-        <li>!game1</li>
-        <li>!game1</li>
-        <li>!game1</li>
-        <li>!game1</li>
-        <li>!game1</li>
-        <li>!game1</li>
-        <li>!game1</li>
-        <li>!game1</li>
-        <li>!game1</li>
-        <li>!game1</li>
-        <li>!game1</li>
-        <li>!game1</li>
+        <li>!thps</li>
+        <li>!wario</li>
+        <li>!pinball</li>
+        <li>!roadrash</li>
+        <li>!spyro</li>
+        <li>!yugioh</li>
+        <li>!mariotennis</li>
+        <li>!tekken</li>
+        <li>!dejavu</li>
+        <li>!tmnt</li>
+        <li>!grinch</li>
+        <li>!dbz</li>
         <li>!jungle</li>
         <li>!shining</li>
         <li>!xmen</li>
