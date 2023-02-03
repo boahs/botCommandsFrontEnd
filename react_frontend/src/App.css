@@ -17,7 +17,9 @@
 
 .SMALLSECONDHEADER{
 font-size: 2vh;
-
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-color: red;
 }
 
 .LIST{
@@ -265,4 +267,13 @@ h2 {
   color:white;
   border-radius:8px;
   background-color:red;
+}
+
+h3 {
+  font-size:20px;
+  display:inline-block;
+  padding:10px;
+  color:black;
+  border-radius:16px;
+  background-color:white;
 }

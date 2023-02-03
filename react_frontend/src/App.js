@@ -4,8 +4,6 @@ import twitchIcon from './images/twitch-icon.svg'
 import githubIcon from './images/github-icon.svg'
 import {useEffect} from 'react'
 
-
-
 function App() {
   useEffect(() => {
     document.title = "BoahsBot"
@@ -33,12 +31,27 @@ function App() {
         <summary>
         Commands
         </summary>
+        <h3>General Commands</h3>
         <li>!commands</li>
         <li>!pan</li>
         <li>!voyage</li>
         <li>!dirtydozen</li>
         <li>!ggtv</li>
         <li>!deals</li>
+        <h3>Dirty Dozen 2023</h3>        
+        <li>!007</li>
+        <li>!blood</li>
+        <li>!spiderman</li>
+        <li>!xfiles</li>
+        <li>!specops</li>
+        <li>!final</li>
+        <li>!echo</li>
+        <li>!medievil</li>
+        <li>!tm4</li>
+        <li>!bigrace</li>
+        <li>!needspeed</li>
+        <li>!jampack</li>
+        <h3>Dirty Dozen 2022</h3>
         <li>!thps</li>
         <li>!wario</li>
         <li>!pinball</li>
@@ -51,6 +64,7 @@ function App() {
         <li>!tmnt</li>
         <li>!grinch</li>
         <li>!dbz</li>
+        <h3>Dirty Dozen 2021</h3>
         <li>!jungle</li>
         <li>!shining</li>
         <li>!xmen</li>
