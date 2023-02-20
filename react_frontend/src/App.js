@@ -67,7 +67,7 @@ function App() {
         <br></br>
         !bigrace
         <br></br>
-        !needspeed
+        !needforspeed
         <br></br>
         !jampack
         <br></br>
