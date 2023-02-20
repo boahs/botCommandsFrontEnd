@@ -77,7 +77,7 @@ function App() {
         <br></br>
         !wario
         <br></br>
-        !pinball
+        !potd
         <br></br>
         !roadrash
         <br></br>
