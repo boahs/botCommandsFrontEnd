@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Bot created for Twitch</h2>
+        <h2>Bot created for The Dirty Dozen</h2>
       <code>
       <img src={githubIcon} alt="twitch icon" className = "icon" />
             <a 
