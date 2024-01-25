@@ -6,7 +6,7 @@ import {useEffect} from 'react'
 
 function App() {
   useEffect(() => {
-    document.title = "BoahsBot"
+    document.title = "DirtyDozen Bot"
   }, [])
   return (
     <div className="App">
@@ -19,7 +19,7 @@ function App() {
               href="https://github.com/boahs/Boahs_GamingGalleon_Bot"
               target="_blank"
               rel="noopener noreferrer"
-              >BoahsBot</a>
+              >DirtyDozen Bot</a>
             </code>
         <img src={logo} className="App-logo" alt="logo" />
 
