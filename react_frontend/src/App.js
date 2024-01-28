@@ -46,8 +46,31 @@ function App() {
         !deals
         <br></br>
         <h3>Dirty Dozen 2024</h3>
+        <br></br>        
+        !psychoPinball
         <br></br>
-        TBA
+        !psychoMotor
+        <br></br>
+        !fightersHistory
+        <br></br>
+        !stones
+        <br></br>
+        !dizzy
+        <br></br>
+        !solaris
+        <br></br>
+        !hunter
+        <br></br>
+        !ignition
+        <br></br>
+        !worms
+        <br></br>
+        !streetChallenge
+        <br></br>
+        !earthwormJim
+        <br></br>
+        !cybattler
+        <br></br>
         <h3>Dirty Dozen 2023</h3>
         <br></br>        
         !007
