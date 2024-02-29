@@ -1,166 +1,130 @@
+import React, { useState, useEffect } from 'react';
 import './App.css';
-import logo from './images/dozenmaster.png'
-import twitchIcon from './images/twitch-icon.svg'
-import githubIcon from './images/github-icon.svg'
-import {useEffect} from 'react'
+import logo from './images/dozenmaster.png';
+import twitchIcon from './images/twitch-icon.svg';
+import githubIcon from './images/github-icon.svg';
 
 function App() {
+  const [countdown, setCountdown] = useState('');
+
   useEffect(() => {
-    document.title = "DirtyDozen Bot"
-  }, [])
+    document.title = "DirtyDozen Bot";
+
+    const timer = setInterval(() => {
+      // Current time in UTC
+      const nowUtc = new Date().getTime();
+
+      // Target date: February 29, 2024, at midnight Eastern Time
+      // Since ET is UTC-5 (not accounting for DST), we'll adjust the target time accordingly.
+      // Note: This does not account for the ET switch to daylight saving time.
+      const targetDate = new Date('March 1, 2025 05:00:00 GMT+0000').getTime();
+
+      // Calculate the difference
+      const diff = targetDate - nowUtc;
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      setCountdown(`${days}d ${hours}h ${minutes}m ${seconds}s`);
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
+        <h2>Countdown to Next Dirty Dozen: {countdown}</h2>
         <h2>Bot created for The Dirty Dozen</h2>
-      <code>
-      <img src={githubIcon} alt="twitch icon" className = "icon" />
-            <a 
-              className="App-link"
-              href="https://github.com/boahs/Boahs_GamingGalleon_Bot"
-              target="_blank"
-              rel="noopener noreferrer"
-              >DirtyDozen Bot</a>
-            </code>
+        <code>
+          <img src={githubIcon} alt="GitHub icon" className="icon" />
+          <a 
+            className="App-link"
+            href="https://github.com/boahs/Boahs_GamingGalleon_Bot"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            DirtyDozen Bot
+          </a>
+        </code>
         <img src={logo} className="App-logo" alt="logo" />
-
-        <section className = "SMALLSECONDHEADER">
+        <section className="SMALLSECONDHEADER">
           Click triangle dropdown for list of all commands
         </section>
-        <section className = "LIST">
+        <section className="LIST">
           <details>
-        <summary>
-        Commands
-        </summary>
-        <h3>General Commands</h3>
-        <br></br>
-        !commands
-        <br></br>
-        !pan
-        <br></br>
-        !voyage
-        <br></br>
-        !dirtydozen
-        <br></br>
-        !ggtv
-        <br></br>
-        !deals
-        <br></br>
-        <h3>Dirty Dozen 2024</h3>
-        <br></br>        
-        !psychoPinball
-        <br></br>
-        !psychoMotor
-        <br></br>
-        !fightersHistory
-        <br></br>
-        !stones
-        <br></br>
-        !dizzy
-        <br></br>
-        !solaris
-        <br></br>
-        !hunter
-        <br></br>
-        !ignition
-        <br></br>
-        !worms
-        <br></br>
-        !streetChallenge
-        <br></br>
-        !earthwormJim
-        <br></br>
-        !cybattler
-        <br></br>
-        <h3>Dirty Dozen 2023</h3>
-        <br></br>        
-        !007
-        <br></br>
-        !blood
-        <br></br>
-        !spiderman
-        <br></br>
-        !xfiles
-        <br></br>
-        !specops
-        <br></br>
-        !ff8
-        <br></br>
-        !echo
-        <br></br>
-        !medievil
-        <br></br>
-        !tm4
-        <br></br>
-        !bigrace
-        <br></br>
-        !needforspeed
-        <br></br>
-        !jampack
-        <br></br>
-        <h3>Dirty Dozen 2022</h3>
-        <br></br>
-        !thps
-        <br></br>
-        !wario
-        <br></br>
-        !potd
-        <br></br>
-        !roadrash
-        <br></br>
-        !spyro
-        <br></br>
-        !yugioh
-        <br></br>
-        !mariotennis
-        <br></br>
-        !tekken
-        <br></br>
-        !dejavu
-        <br></br>
-        !tmnt
-        <br></br>
-        !grinch
-        <br></br>
-        !dbz
-        <br></br>
-        <h3>Dirty Dozen 2021</h3>
-        <br></br>
-        !jungle
-        <br></br>
-        !shining
-        <br></br>
-        !xmen
-        <br></br>
-        !crueball
-        <br></br>
-        !bio
-        <br></br>
-        !nhl
-        <br></br>
-        !chakan
-        <br></br>
-        !carnage
-        <br></br>
-        !champions
-        <br></br>
-        !sonic
-        <br></br>
-        !light
-        <br></br>
-        !mercs
-        <br></br>
+            <summary>Commands</summary>
+            <h3>General Commands</h3>
+            <p>!commands</p>
+            <p>!pan</p>
+            <p>!voyage</p>
+            <p>!dirtydozen</p>
+            <p>!ggtv</p>
+            <p>!deals</p>
+            <h3>Dirty Dozen 2024</h3>
+            <p>!psychoPinball</p>
+            <p>!psychoMotor</p>
+            <p>!fightersHistory</p>
+            <p>!stones</p>
+            <p>!dizzy</p>
+            <p>!solaris</p>
+            <p>!hunter</p>
+            <p>!ignition</p>
+            <p>!worms</p>
+            <p>!streetChallenge</p>
+            <p>!earthwormJim</p>
+            <p>!cybattler</p>
+            <h3>Dirty Dozen 2023</h3>
+            <p>!007</p>
+            <p>!blood</p>
+            <p>!spiderman</p>
+            <p>!xfiles</p>
+            <p>!specops</p>
+            <p>!ff8</p>
+            <p>!echo</p>
+            <p>!medievil</p>
+            <p>!tm4</p>
+            <p>!bigrace</p>
+            <p>!needforspeed</p>
+            <p>!jampack</p>
+            <h3>Dirty Dozen 2022</h3>
+            <p>!thps</p>
+            <p>!wario</p>
+            <p>!potd</p>
+            <p>!roadrash</p>
+            <p>!spyro</p>
+            <p>!yugioh</p>
+            <p>!mariotennis</p>
+            <p>!tekken</p>
+            <p>!dejavu</p>
+            <p>!tmnt</p>
+            <p>!grinch</p>
+            <p>!dbz</p>
+            <h3>Dirty Dozen 2021</h3>
+            <p>!jungle</p>
+            <p>!shining</p>
+            <p>!xmen</p>
+            <p>!crueball</p>
+            <p>!bio</p>
+            <p>!nhl</p>
+            <p>!chakan</p>
+            <p>!carnage</p>
+            <p>!champions</p>
+            <p>!sonic</p>
+            <p>!light</p>
+            <p>!mercs</p>
           </details>
-          </section>
-       
+        </section>
         <a
           className="App-link"
           href="https://twitch.tv/boahs"
           target="_blank"
           rel="noopener noreferrer"
         >
-         <img src={twitchIcon} alt="twitch icon" className = "icon" />Boahs
+          <img src={twitchIcon} alt="Twitch icon" className="icon" />Boahs
         </a>
-        
       </header>
     </div>
   );
