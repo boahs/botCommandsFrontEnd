@@ -14,10 +14,8 @@ function App() {
       // Current time in UTC
       const nowUtc = new Date().getTime();
 
-      // Target date: February 29, 2024, at midnight Eastern Time
-      // Since ET is UTC-5 (not accounting for DST), we'll adjust the target time accordingly.
-      // Note: This does not account for the ET switch to daylight saving time.
-      const targetDate = new Date('March 1, 2025 05:00:00 GMT+0000').getTime();
+      // Target date: February 1, 2025, at midnight Eastern Time (ET)
+      const targetDate = new Date('February 1, 2025 05:00:00 GMT+0000').getTime();
 
       // Calculate the difference
       const diff = targetDate - nowUtc;
