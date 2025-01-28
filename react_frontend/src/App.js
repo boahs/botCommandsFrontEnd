@@ -37,8 +37,10 @@ function App() {
         <h2>Countdown to Next Dirty Dozen: {countdown}</h2>
         <h2>Bot created for The Dirty Dozen</h2>
         <section className="botStatus">
-        <h2>Bot status: Online</h2>
-        </section>
+  <p>
+    Bot Status: <span className="onlineText">Online</span>
+  </p>
+</section>
         <code>
           <img src={githubIcon} alt="GitHub icon" className="icon" />
           <a 

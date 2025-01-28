@@ -22,12 +22,21 @@ text-decoration-style: solid;
 text-decoration-color: red;
 }
 
-.botStatus{
-font-size: 1vh;
-text-decoration-line: underline;
-text-decoration-style: solid;
-text-decoration-color: green;
+/* This sets the entire paragraph smaller, and not underlined or red. */
+.botStatus p {
+  font-size: 2vh;   /* or pick any size you like */
+  color: white;     /* text color for the label "Bot Status:" */
+  margin: 0.5rem 0;
+  background-color: transparent;
+  text-decoration: none;
 }
+
+/* This styles the actual "Online" text in bright green. */
+.onlineText {
+  color: lime;      /* bright green */
+  font-weight: bold;
+}
+
 
 .LIST{
   font-size: 3vh;
