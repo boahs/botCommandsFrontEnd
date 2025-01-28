@@ -36,6 +36,7 @@ function App() {
       <header className="App-header">
         <h2>Countdown to Next Dirty Dozen: {countdown}</h2>
         <h2>Bot created for The Dirty Dozen</h2>
+        <h2>Bot status: Online</h2>
         <code>
           <img src={githubIcon} alt="GitHub icon" className="icon" />
           <a 
@@ -61,6 +62,8 @@ function App() {
             <p>!dirtydozen</p>
             <p>!ggtv</p>
             <p>!deals</p>
+            <h3>Dirty Dozen 2022</h3>
+            <p>TBA!</p>
             <h3>Dirty Dozen 2024</h3>
             <p>!psychoPinball</p>
             <p>!psychoMotor</p>
