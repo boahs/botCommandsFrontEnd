@@ -10,23 +10,41 @@ function App() {
   useEffect(() => {
     document.title = "DirtyDozen Bot";
 
-    const timer = setInterval(() => {
-      // Current time in UTC
-      const nowUtc = new Date().getTime();
+    const updateCountdown = () => {
+      const nowUtc = new Date();
+      const currentYear = nowUtc.getUTCFullYear();
+      const nextFeb = new Date(Date.UTC(currentYear, 1, 1, 5, 0, 0)); // Feb 1st at 05:00 UTC
 
-      // Target date: February 1, 2025, at midnight Eastern Time (ET)
-      const targetDate = new Date('February 1, 2025 05:00:00 GMT+0000').getTime();
+      // If past February, set to next year's February
+      if (nowUtc >= nextFeb) {
+        nextFeb.setUTCFullYear(currentYear + 1);
+      }
 
-      // Calculate the difference
-      const diff = targetDate - nowUtc;
+      const diff = nextFeb - nowUtc;
 
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+      if (diff <= 0) {
+        setCountdown(
+          <a 
+            href="https://www.twitch.tv/the_gaming_galleon"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: 'red', fontSize: '24px', fontWeight: 'bold', textDecoration: 'none' }}
+          >
+            NOW!!!!
+          </a>
+        );
+      } else {
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-      setCountdown(`${days}d ${hours}h ${minutes}m ${seconds}s`);
-    }, 1000);
+        setCountdown(`${days}d ${hours}h ${minutes}m ${seconds}s`);
+      }
+    };
+
+    updateCountdown();
+    const timer = setInterval(updateCountdown, 1000);
 
     return () => clearInterval(timer);
   }, []);
@@ -37,10 +55,10 @@ function App() {
         <h2>Countdown to Next Dirty Dozen: {countdown}</h2>
         <h2>Bot created for The Dirty Dozen</h2>
         <section className="botStatus">
-  <p>
-    Bot Status: <span className="onlineText">Online</span>
-  </p>
-</section>
+          <p>
+            Bot Status: <span className="onlineText">Online</span>
+          </p>
+        </section>
         <code>
           <img src={githubIcon} alt="GitHub icon" className="icon" />
           <a 
