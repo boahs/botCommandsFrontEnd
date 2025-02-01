@@ -13,16 +13,14 @@ function App() {
     const updateCountdown = () => {
       const nowUtc = new Date();
       const currentYear = nowUtc.getUTCFullYear();
-      const nextFeb = new Date(Date.UTC(currentYear, 1, 1, 5, 0, 0)); // Feb 1st at 05:00 UTC
+      
+      // Start of the event: Feb 1st, 05:00 UTC
+      const eventStart = new Date(Date.UTC(currentYear, 1, 1, 5, 0, 0));
+      // End of the event: March 1st, 05:00 UTC
+      const eventEnd = new Date(Date.UTC(currentYear, 2, 1, 5, 0, 0));
 
-      // If past February, set to next year's February
-      if (nowUtc >= nextFeb) {
-        nextFeb.setUTCFullYear(currentYear + 1);
-      }
-
-      const diff = nextFeb - nowUtc;
-
-      if (diff <= 0) {
+      // If we're in February, display "NOW!!!!"
+      if (nowUtc >= eventStart && nowUtc < eventEnd) {
         setCountdown(
           <a 
             href="https://www.twitch.tv/the_gaming_galleon"
@@ -34,6 +32,10 @@ function App() {
           </a>
         );
       } else {
+        // If it's March or later, calculate countdown to next February 1st
+        const nextFeb = new Date(Date.UTC(currentYear + 1, 1, 1, 5, 0, 0));
+        const diff = nextFeb - nowUtc;
+
         const days = Math.floor(diff / (1000 * 60 * 60 * 24));
         const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
