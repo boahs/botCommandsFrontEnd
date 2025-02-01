@@ -26,7 +26,16 @@ function App() {
             href="https://www.twitch.tv/the_gaming_galleon"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: 'red', fontSize: '24px', fontWeight: 'bold', textDecoration: 'none' }}
+            style={{ 
+              color: 'white', 
+              fontSize: '24px', 
+              fontWeight: 'bold', 
+              textDecoration: 'none',
+              backgroundColor: 'red',
+              padding: '10px 20px',
+              borderRadius: '8px',
+              display: 'inline-block'
+            }}
           >
             NOW!!!!
           </a>
