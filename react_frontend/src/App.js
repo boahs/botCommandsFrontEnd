@@ -14,12 +14,9 @@ function App() {
       const nowUtc = new Date();
       const currentYear = nowUtc.getUTCFullYear();
       
-      // Start of the event: Feb 1st, 05:00 UTC
       const eventStart = new Date(Date.UTC(currentYear, 1, 1, 5, 0, 0));
-      // End of the event: March 1st, 05:00 UTC
       const eventEnd = new Date(Date.UTC(currentYear, 2, 1, 5, 0, 0));
 
-      // If we're in February, display "NOW!!!!"
       if (nowUtc >= eventStart && nowUtc < eventEnd) {
         setCountdown(
           <a 
@@ -41,7 +38,6 @@ function App() {
           </a>
         );
       } else {
-        // If it's March or later, calculate countdown to next February 1st
         const nextFeb = new Date(Date.UTC(currentYear + 1, 1, 1, 5, 0, 0));
         const diff = nextFeb - nowUtc;
 
@@ -64,12 +60,24 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h2>Countdown to Next Dirty Dozen: {countdown}</h2>
+
+        <a 
+          className="App-link"
+          href="https://www.twitch.tv/the_gaming_galleon"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ fontSize: '18px', fontWeight: 'bold' }}
+        >
+          Official Dirty Dozen Masters Channel
+        </a>
+
         <h2>Bot created for The Dirty Dozen</h2>
         <section className="botStatus">
           <p>
             Bot Status: <span className="onlineText">Online</span>
           </p>
         </section>
+
         <code>
           <img src={githubIcon} alt="GitHub icon" className="icon" />
           <a 
@@ -81,10 +89,12 @@ function App() {
             DirtyDozen Bot
           </a>
         </code>
+
         <img src={logo} className="App-logo" alt="logo" />
         <section className="SMALLSECONDHEADER">
           Click triangle dropdown for list of all commands
         </section>
+        
         <section className="LIST">
           <details>
             <summary>Commands</summary>
@@ -95,6 +105,7 @@ function App() {
             <p>!dirtydozen</p>
             <p>!ggtv</p>
             <p>!deals</p>
+
             <h3>Dirty Dozen 2025</h3>
             <p>!naruto</p>
             <p>!rebelraiders</p>
@@ -108,6 +119,7 @@ function App() {
             <p>!mgs2</p>
             <p>!kingdomhearts</p>
             <p>!atvoffroadfury</p>
+
             <h3>Dirty Dozen 2024</h3>
             <p>!psychoPinball</p>
             <p>!psychoMotor</p>
@@ -121,6 +133,7 @@ function App() {
             <p>!streetChallenge</p>
             <p>!earthwormJim</p>
             <p>!cybattler</p>
+
             <h3>Dirty Dozen 2023</h3>
             <p>!007</p>
             <p>!blood</p>
@@ -134,6 +147,7 @@ function App() {
             <p>!bigrace</p>
             <p>!needforspeed</p>
             <p>!jampack</p>
+
             <h3>Dirty Dozen 2022</h3>
             <p>!thps</p>
             <p>!wario</p>
@@ -147,6 +161,7 @@ function App() {
             <p>!tmnt</p>
             <p>!grinch</p>
             <p>!dbz</p>
+
             <h3>Dirty Dozen 2021</h3>
             <p>!jungle</p>
             <p>!shining</p>
@@ -162,13 +177,15 @@ function App() {
             <p>!mercs</p>
           </details>
         </section>
+
         <a
           className="App-link"
           href="https://twitch.tv/boahs"
           target="_blank"
           rel="noopener noreferrer"
+          style={{ marginTop: '20px', fontSize: '16px', fontWeight: 'bold' }}
         >
-          <img src={twitchIcon} alt="Twitch icon" className="icon" />Boahs
+          <img src={twitchIcon} alt="Twitch icon" className="icon" /> Created by - Boahs
         </a>
       </header>
     </div>
