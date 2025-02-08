@@ -66,8 +66,9 @@ function App() {
           href="https://www.twitch.tv/the_gaming_galleon"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ fontSize: '18px', fontWeight: 'bold' }}
+          style={{ fontSize: '18px', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '8px' }}
         >
+          <img src={twitchIcon} alt="Twitch icon" className="icon" />
           Official Dirty Dozen Masters Channel
         </a>
 
@@ -183,7 +184,7 @@ function App() {
           href="https://twitch.tv/boahs"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ marginTop: '20px', fontSize: '16px', fontWeight: 'bold' }}
+          style={{ marginTop: '20px', fontSize: '16px', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '8px' }}
         >
           <img src={twitchIcon} alt="Twitch icon" className="icon" /> Created by - Boahs
         </a>
