@@ -96,7 +96,18 @@ function App() {
             <p>!ggtv</p>
             <p>!deals</p>
             <h3>Dirty Dozen 2025</h3>
-            <p>TBA!</p>
+            <p>!naruto</p>
+            <p>!rebelraiders</p>
+            <p>!lotr</p>
+            <p>!dah2</p>
+            <p>!tmblack</p>
+            <p>!dynastywarriors4</p>
+            <p>!nanobreaker</p>
+            <p>!pinball_hof</p>
+            <p>!dualhearts</p>
+            <p>!mgs2</p>
+            <p>!kingdomhearts</p>
+            <p>!atvoffroadfury</p>
             <h3>Dirty Dozen 2024</h3>
             <p>!psychoPinball</p>
             <p>!psychoMotor</p>
