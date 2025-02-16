@@ -75,7 +75,7 @@ function App() {
         <h2>Bot created for The Dirty Dozen</h2>
         <section className="botStatus">
           <p>
-            Bot Status: <span className="onlineText">Online</span>
+            Bot Status: <span className="onlineText">OFFLINE</span>
           </p>
         </section>
 
