@@ -107,6 +107,20 @@ function App() {
             <p>!ggtv</p>
             <p>!deals</p>
 
+            <h3>Dirty Dozen 2026</h3>
+            <p>!cg</p>
+            <p>!grandprix</p>
+            <p>!wpf</p>
+            <p>!aztec</p>
+            <p>!thunderblade</p>
+            <p>!theninja</p>
+            <p>!rastan</p>
+            <p>!lots</p>
+            <p>!hangon</p>
+            <p>!miraclewarriors</p>
+            <p>!timesoldiers</p>
+            <p>!wonderboy3</p>
+
             <h3>Dirty Dozen 2025</h3>
             <p>!naruto</p>
             <p>!rebelraiders</p>
