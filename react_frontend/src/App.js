@@ -38,8 +38,10 @@ function App() {
           </a>
         );
       } else {
-        const nextFeb = new Date(Date.UTC(currentYear + 1, 1, 1, 5, 0, 0));
-        const diff = nextFeb - nowUtc;
+        const nextStart = nowUtc < eventStart
+          ? eventStart
+          : new Date(Date.UTC(currentYear + 1, 1, 1, 5, 0, 0));
+        const diff = nextStart - nowUtc;
 
         const days = Math.floor(diff / (1000 * 60 * 60 * 24));
         const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
